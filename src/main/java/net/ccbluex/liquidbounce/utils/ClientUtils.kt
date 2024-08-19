@@ -1,7 +1,6 @@
 /*
- * FDPClient Hacked Client
- * A free open source mixin-based injection hacked client for Minecraft using Minecraft Forge by LiquidBounce.
- * https://github.com/SkidderMC/FDPClient/
+ * Mobiz Hacked Client
+ * A Paid open source mixin-based injection hacked client for Minecraft using Minecraft Forge by LiquidBounce.
  */
 package net.ccbluex.liquidbounce.utils
 
@@ -33,7 +32,7 @@ object ClientUtils : MinecraftInstance() {
         } catch (ignored: NoSuchFieldException) { }
     }
 
-    val LOGGER: Logger = LogManager.getLogger("FDPCLIENT")
+    val LOGGER: Logger = LogManager.getLogger("Mobiz")
 
     fun disableFastRender() {
         try {
@@ -59,7 +58,7 @@ object ClientUtils : MinecraftInstance() {
     }
 
     fun displayAlert(message: String) {
-        displayChatMessage("§7[§b§l$CLIENT_NAME§7]§r $message")
+        displayChatMessage("§7[§b§l$MobizCLIENT_NAME§7]§r $message")
     }
 
     fun displayChatMessage(message: String) {
